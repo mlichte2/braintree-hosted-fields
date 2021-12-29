@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header, footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+h3 {
+    padding-bottom: 0px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin:10px;
+}
+
+#images{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.payment-form{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#order-form {
+    text-align: center;
+}
+
+#my-sample-form {
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#card-number, #cvv, #expiration-date {
+    border: 2px solid #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    -webkit-transition: border-color 160ms;
+    transition: border-color 160ms;
+    border-radius: 5px;
+  }
+  
+#card-number.braintree-hosted-fields-focused,
+#cvv.braintree-hosted-fields-focused, 
+#expiration-date.braintree-hosted-fields-focused {
+    border-color: rgb(63, 96, 243);
+  }
+  
+#card-number.braintree-hosted-fields-invalid,
+#cvv.braintree-hosted-fields-invalid, 
+#expiration-date.braintree-hosted-fields-invalid {
+    border-color: tomato;
+  }
+  
+#card-number.braintree-hosted-fields-valid,
+#cvv.braintree-hosted-fields-valid, 
+#expiration-date.braintree-hosted-fields-valid {
+    border-color: limegreen;
+  }
